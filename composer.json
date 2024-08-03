@@ -1,0 +1,44 @@
+{
+    "name": "kalakotra/silverstripe-elemental-oembed",
+    "description": "A block to embed media from other websites via oEmbed",
+    "authors": [
+        {
+            "name": "Dynamic",
+            "email": "dev@dynamicagency.com",
+            "homepage": "http://www.dynamicagency.com"
+        }
+    ],
+    "keywords": [
+        "silverstripe", "elemental", "content", "blocks", "oembed"
+    ],
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "require": {
+        
+    },
+    "require-dev": {
+        "silverstripe/recipe-testing": "^3"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:jsirish/silverstripe-htmltag.git"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true,
+            "silverstripe/recipe-plugin": true
+        },
+        "process-timeout": 600
+    },
+    "autoload": {
+        "psr-4": {
+            "Dynamic\\Elements\\Oembed\\": "src/",
+            "Dynamic\\Elements\\Oembed\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
